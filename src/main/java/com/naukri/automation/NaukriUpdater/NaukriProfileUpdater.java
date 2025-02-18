@@ -4,11 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import java.awt.Desktop.Action;
 import java.time.Duration;
 
 public class NaukriProfileUpdater {
@@ -41,7 +39,7 @@ public class NaukriProfileUpdater {
             driver.get("https://www.naukri.com/mnjuser/profile");
             Thread.sleep(5000);          
             // Upload Resume to Update Profile
-            String resumePath = System.getProperty("user.dir") + "/resume/Vijaykumar_Resume_QAEngineer_ATS.pdf";
+            String resumePath = System.getProperty("user.dir") + "/resume/VijaykumarP_SrQAEngineer_7YOE_java.pdf";
             WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
             uploadButton.sendKeys(resumePath);
             Thread.sleep(5000); // Wait for upload to complete
