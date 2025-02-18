@@ -18,7 +18,7 @@ public class NaukriProfileUpdater {
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito"); // Run in incognito mode (no cookies stored)
         options.addArguments("--disable-blink-features=AutomationControlled"); // Prevent detection
-        //options.addArguments("--headless"); // Uncomment if you want to run in headless mode
+        options.addArguments("--headless"); // Uncomment if you want to run in headless mode
         WebDriver driver = new ChromeDriver(options);
 
         try {
