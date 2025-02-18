@@ -53,6 +53,13 @@
         <artifactId>webdrivermanager</artifactId>
         <version>4.4.3</version>
     </dependency>
+    <!-- TestNG Dependency -->
+    <dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>7.7.1</version> <!-- Use the latest stable version -->
+        <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
@@ -75,6 +82,11 @@
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.3.0</version>
+          <configuration>
+                <includes>
+                    <include>**/*Test.java</include>  <!-- Ensures all test classes are included -->
+                </includes>
+            </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>

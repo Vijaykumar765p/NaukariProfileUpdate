@@ -9,14 +9,14 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 import java.time.Duration;
 
-public class NaukriProfileUpdater {
+public class NaukriProfileUpdaterTest {
     public static void main(String[] args) {
         // Setup WebDriver
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--incognito"); // Run in incognito mode (no cookies stored)
         options.addArguments("--disable-blink-features=AutomationControlled"); // Prevent detection
-        options.addArguments("--headless"); // Uncomment if you want to run in headless mode
+        //options.addArguments("--headless"); // Uncomment if you want to run in headless mode
         WebDriver driver = new ChromeDriver(options);
 
         try {
@@ -39,7 +39,8 @@ public class NaukriProfileUpdater {
             driver.get("https://www.naukri.com/mnjuser/profile");
             Thread.sleep(5000);          
             // Upload Resume to Update Profile
-            String resumePath = System.getProperty("user.dir") + "/resume/VijaykumarP_SrQAEngineer_7YOE_java.pdf";
+            //Vijaykumar_Resume_QAEngineer_ATS and VijaykumarP_SrQAEngineer_7YOE_java
+            String resumePath = System.getProperty("user.dir") + "/resume/Vijaykumar_Resume_QAEngineer_ATS.pdf";
             WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
             uploadButton.sendKeys(resumePath);
             Thread.sleep(5000); // Wait for upload to complete
