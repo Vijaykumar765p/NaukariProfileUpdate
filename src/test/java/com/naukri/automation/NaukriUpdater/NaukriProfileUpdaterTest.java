@@ -26,8 +26,6 @@ public class NaukriProfileUpdaterTest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
 		options.addArguments("--disable-blink-features=AutomationControlled");
-		options.addArguments("--headless"); // Uncomment if you want to run in
-//		 headless mode
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
