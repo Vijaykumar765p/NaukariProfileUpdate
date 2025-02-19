@@ -26,8 +26,8 @@ public class NaukriProfileUpdaterTest {
 		ChromeOptions options = new ChromeOptions();
 		options.addArguments("--incognito");
 		options.addArguments("--disable-blink-features=AutomationControlled");
-		// options.addArguments("--headless"); // Uncomment if you want to run in
-		// headless mode
+		options.addArguments("--headless"); // Uncomment if you want to run in
+//		 headless mode
 		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -60,7 +60,7 @@ public class NaukriProfileUpdaterTest {
 		WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
 		uploadButton.sendKeys(resumePath);
 		Thread.sleep(5000); // Wait for upload to complete
-		 // Assert that the profile was updated successfully
+		// Assert that the profile was updated successfully
 //        WebElement successMessage = driver.findElement(By.xpath("//span[contains(text(),'Profile updated successfully')]"));
 //        Assert.assertTrue(successMessage.isDisplayed(), "Profile update was not successful");
 
