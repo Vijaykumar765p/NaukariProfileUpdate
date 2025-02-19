@@ -9,7 +9,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.chrome.ChromeDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
@@ -44,9 +43,6 @@ public class NaukriProfileUpdaterTest {
 	public void testProfileUpdate(String username, String password) throws InterruptedException {
 		// Open Naukri Login Page
 		driver.get("https://www.naukri.com/nlogin/login");
-
-		// Click on Login
-		driver.findElement(By.linkText("Login")).click();
 		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.id("usernameField")));
 
 		// Enter Login Credentials

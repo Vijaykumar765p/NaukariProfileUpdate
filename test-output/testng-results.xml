@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-19T07:57:05 IST" name="Suite" finished-at="2025-02-19T07:57:35 IST" duration-ms="30209">
+  <suite started-at="2025-02-19T08:16:28 IST" name="Default suite" finished-at="2025-02-19T08:16:57 IST" duration-ms="29240">
     <groups>
     </groups>
-    <test started-at="2025-02-19T07:57:05 IST" name="Test" finished-at="2025-02-19T07:57:35 IST" duration-ms="30209">
+    <test started-at="2025-02-19T08:16:28 IST" name="Default test" finished-at="2025-02-19T08:16:57 IST" duration-ms="29240">
       <class name="com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@26b3fd41]" started-at="2025-02-19T07:57:05 IST" name="setUp" finished-at="2025-02-19T07:57:11 IST" duration-ms="5696" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@689604d9]" started-at="2025-02-19T08:16:28 IST" name="setUp" finished-at="2025-02-19T08:16:34 IST" duration-ms="6002" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testProfileUpdate(java.lang.String,java.lang.String)[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@26b3fd41]" started-at="2025-02-19T07:57:11 IST" name="testProfileUpdate" data-provider="loginData" finished-at="2025-02-19T07:57:34 IST" duration-ms="23649" status="PASS">
+        <test-method signature="testProfileUpdate(java.lang.String, java.lang.String)[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@689604d9]" started-at="2025-02-19T08:16:34 IST" name="testProfileUpdate" data-provider="loginData" finished-at="2025-02-19T08:16:57 IST" duration-ms="22389" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,11 +27,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileUpdate -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@26b3fd41]" started-at="2025-02-19T07:57:34 IST" name="tearDown" finished-at="2025-02-19T07:57:35 IST" duration-ms="746" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest@689604d9]" started-at="2025-02-19T08:16:57 IST" name="tearDown" finished-at="2025-02-19T08:16:57 IST" duration-ms="721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.naukri.automation.NaukriUpdater.NaukriProfileUpdaterTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

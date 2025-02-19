@@ -57,7 +57,7 @@
     <dependency>
         <groupId>org.testng</groupId>
         <artifactId>testng</artifactId>
-        <version>7.7.1</version> <!-- Use the latest stable version -->
+        <version>7.3.0</version>
         <scope>test</scope>
     </dependency>
   </dependencies>
@@ -81,11 +81,11 @@
         </plugin>
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.3.0</version>
-          <configuration>
-                <includes>
-                    <include>**/*Test.java</include>  <!-- Ensures all test classes are included -->
-                </includes>
+           <version>3.0.0-M7</version>
+            <configuration>
+                <suiteXmlFiles>
+                    <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
             </configuration>
         </plugin>
         <plugin>
