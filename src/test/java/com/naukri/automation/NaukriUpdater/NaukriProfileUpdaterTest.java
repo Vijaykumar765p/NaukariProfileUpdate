@@ -54,7 +54,9 @@ public class NaukriProfileUpdaterTest {
 		Thread.sleep(5000);
 
 		// Upload Resume to Update Profile
-		String resumePath = System.getProperty("user.dir") + "/resume/Vijaykumar_Resume_QAEngineer_ATS.pdf";
+		//Resume names
+		//Vijaykumar_Pattar_Automation_Tester_Resume7YOE_java & 		
+		String resumePath = System.getProperty("user.dir") + "/resume/Vijaykumar_Pattar_Automation_Tester_Resume7YOE_java.pdf";
 		WebElement uploadButton = driver.findElement(By.xpath("//input[@type='file']"));
 		uploadButton.sendKeys(resumePath);
 		Thread.sleep(5000); // Wait for upload to complete
