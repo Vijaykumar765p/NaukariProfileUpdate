@@ -1,5 +1,0 @@
-# Created at 2025-02-19T08:28:09.320
-Boot Manifest-JAR contains absolute paths in classpath 'E:\AutomationPractice\Naukari\NaukriUpdater\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-'other' has different root
-
